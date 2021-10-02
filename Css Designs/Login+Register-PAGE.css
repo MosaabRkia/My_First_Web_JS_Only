@@ -1,0 +1,267 @@
+html { 
+ background-image: url(https://images4.alphacoders.com/967/9676.jpg);
+ background-repeat: no-repeat;
+
+  }
+
+  body {
+    animation: fadeIn 3s linear;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /*Body*/
+  body {
+    font-family: Arial, Helvetica, sans-serif; 
+  text-align: center;
+  }
+  
+  /*Header*/
+  .header {
+      height:70px;
+      width:110%;
+      margin:-10px;
+  }
+  
+  /*Register FORM*/
+  #Register_Form {
+    display: none;
+    visibility: hidden;
+    height: 952px;
+    position: relative;
+    width: 80vw;
+    margin: 3rem auto;
+    background-color: rgba(0, 0, 0, 0.692);
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+
+  /*Login FORM*/
+  #Login_Form {
+    display: none;
+    visibility: hidden;
+    position: relative;
+    width: 80vw;
+    margin: 3rem auto;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+  
+  /*Button login and Button Register*/
+  #Button_L,#Button_R {
+      background-color: rgb(255, 145, 0);
+      color: rgb(255, 255, 255);
+      padding: 15px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+    }
+    
+    /*Button login and Button Register "HOVER" */
+    #Button_L:hover,#Button_R:hover{
+      
+    -webkit-animation:rainbow 5s infinite;
+    -ms-animation:rainbow 5s infinite;
+    -o-animation:rainbow 5s infinite;
+    animation:rainbow 5s infinite;
+    }
+    
+    @-webkit-keyframes rainbow {
+    0% {background-color:rgb(255, 145, 0);  border-radius: 10%;}
+    10% {background-color: rgb(0, 0, 0); }
+    20% {background-color:rgb(255, 145, 0);}
+    30% {background-color: rgb(0, 0, 0);}
+    40% {background-color:rgb(255, 145, 0);}
+    50% {background-color: rgb(0, 0, 0);}
+    60% {background-color:rgb(255, 145, 0);  border-radius: 50%;font-size: 20px;}
+    70% {background-color: rgb(0, 0, 0);}
+    80% {background-color:rgb(255, 145, 0);}
+    90% {background-color: rgb(0, 0, 0);}
+    100% {background-color:rgb(255, 145, 0);  border-radius: 10%;}
+    }
+  
+    
+   
+  /*
+  search boxes  (type place of customer)
+  */
+  input[type=email],input[type=text], input[type=password], input[type=email] {
+    width: 50%;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: 50%;
+  }
+  input[type=email],input[type=text], input[type=password], input[type=email]:valid{
+    background-color: rgba(0, 128, 0, 0.5);
+  }
+
+    #boxes{
+  text-align:center;
+  display:block;
+  font-size:140%;
+  color: white;
+    }
+  
+    input[type=email],input[type=text], input[type=password], input[type=email]:hover{
+      background-color: rgba(250, 235, 215, 0.281);
+      border: 2px solid rgb(255, 255, 255);
+    }
+  
+  /*Register_tittle*/
+  #tittle_register{
+    margin-top: 8%;
+    text-align: center;
+    font-family: fantasy;
+   color: white;
+   background-color: rgba(0, 255, 255, 0);
+   font-size: 90px;
+  outline: none;
+  border: none;
+  }
+  /*Register Tittle on hover*/
+  #tittle_register:hover{
+    transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+    color: rgb(0, 0, 0);
+  }
+  
+  /*Login Tittle*/
+  #tittle_login{
+    margin-top: 40px;
+    text-align: center;
+    font-family: fantasy;
+   color: black;
+   background-color: rgba(0, 255, 255, 0);
+   font-size: 90px;
+  outline: none;
+  border: none;
+  }
+  /*Login Tittle on hover*/
+  #tittle_login:hover{
+    transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+    color: rgb(255, 145, 0);
+  }
+  
+  #titles{
+    margin-top: 177px;
+  }
+  
+
+  /*Birthday in Register (Date Bar)*//*
+#Birthday_Bar{
+  font-size: 120%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 50%;
+    border-color: rgba(255, 255, 255, 0);
+}*/
+
+/* register First Name and Last Name */
+#RegFirNam , #RegLasNam {
+  width: 180px;
+}
+
+
+@media only screen and (max-width: 1124px)
+{
+  .topnav a 
+  {
+    padding: 12px 50px;
+    font-size: 14px;
+    margin-right: 52px;
+  }
+
+  #LOGOPHOTO
+  {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 942px)
+{
+  .topnav a 
+  {
+    padding: 12px 35px;
+    font-size: 11px;
+    margin-right: 52px;
+  }
+
+  #LOGOPHOTO
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+  #Login_Form
+  {
+    width: 660px;
+  }
+
+  #Register_Form
+  {
+    width: 660px;
+  }
+
+  #titles
+  {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .topnav a 
+  {
+    padding: 12px 29px;
+    font-size: 11px;
+    margin-right: 45px;
+  }
+
+  #LOGOPHOTO
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+  #titles
+  {
+    margin-left: 50px;
+  }
+}
+
+/*profile photo*/
+#Profile_Photo{
+  display: block;
+  margin-right: auto;
+  margin-left: 353px;
+    float:left;
+    margin-top: 0px;
+    border-radius: 100%;
+    overflow:hidden; 
+    background-color: rgba(0, 0, 255, 0);
+}
+
+
+#UploadButton
+{
+  border-radius: 25px;
+  display: none;
+}
+
+
+

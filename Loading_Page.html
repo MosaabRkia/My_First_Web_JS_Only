@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css Designs/Loading.css">
+    <title>Document</title>
+</head>
+<body onload="setTimeout(
+function(){
+  var newlink = localStorage.getItem('golink');
+  if(newlink == 'Login_Register_Page.html') {
+    localStorage.removeItem('loginnednumber');
+  }
+    location.href = newlink;
+}, 1000*3.2 )">
+    <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
+    
+<div id="wrapper">
+LOADING...
+</div>
+</body>
+</html>

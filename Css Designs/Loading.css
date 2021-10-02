@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    padding: 210px 0 0 0;
+    color: #fff;
+    background: #1d1f20;
+} 
+body{
+    animation: fadeOut 2s linear;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+body{
+opacity: 0;
+margin-top: 25px;
+font-size: 21px;
+text-align: center;
+-webkit-transition: opacity 2s ease-in;
+-moz-transition: opacity 2s ease-in;
+-o-transition: opacity 2s ease-in;
+-ms-transition: opacity 2s ease-in;
+transition: opacity 2s ease-in;
+}
+#loading {
+animation: fadeIn 3s linear;
+}
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+img {
+ width:250px;
+ margin: 0 auto;
+}
+#loading{
+    animation: fadeout 4s;
+}
+@keyframes fadeout {
+    0%{
+        -webkit-transform: rotate(0deg);
+        opacity: 0.9;
+    }
+    100%{
+        -webkit-transform: rotate(1000deg);
+        opacity: 0;
+    }
+}

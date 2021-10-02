@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Of Honai</title>
+    <link rel="stylesheet" href="./Css Designs/Towers_Game.css">
+    <script src="./JavaScript/jquery-3.5.1.js"></script>
+    <script src="/JavaScript/Login-Register.js"></script>
+    <script src="/JavaScript/Towers_Game.js"></script>
+</head>
+
+<body>
+ <div id="startgame" class="startgame">
+Move any circle to start
+ </div>
+    <!--Exit Button-->
+    <button id="exitbutton" onclick="exitandrestartgame('Profile_Page.html')">Exit Game</button>
+    <!--Restart the Game-->
+    <button id="restartgamebutton" onclick="exitandrestartgame('Towers_Game.html')">Restart the game</button>
+    <!--Score Shower-->
+    <h1 class="score"></h1>
+    <!--Towers (3 towers)-->
+<section>
+	<div class="tower _1"></div>
+	<div class="tower _2"></div>
+	<div class="tower _3"></div>
+</section>
+<!--Win class to show massage-->
+<div class="won">
+    <div class="win1">
+        <img src="https://i.pinimg.com/originals/29/8f/2c/298f2ce6dead72fe992253c5ba0eba95.gif" alt="FireWorks">
+    </div>
+  <!--  <img src="https://i.gifer.com/1V8t.gif" alt=""> -->
+    <img src="https://d1j8pt39hxlh3d.cloudfront.net/uploads/party_face_256_1.gif" alt="Claps">
+
+	<h1>Congratulations</h1>
+	<h1>you did It!!</h1>
+</div>
+
+
+</body>
+</html>

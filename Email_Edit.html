@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Css Designs/edit_email_Password.css">
+    <script src="JavaScript/Login-Register.js"></script>
+  </head>
+  <body>
+    <!--Div For The Form-->
+    <div class="Profile-Edit" style="background-image: url(Photos/BG.png);">
+      <!--X Button-->
+      <a href="Edit_Profile.html" ><button id="X" >X</button></a>
+      <!--Form-->
+      <form class="form" action="index.html">
+        <!--Profile Tittle-->
+        <h1>Profile Edit</h1>
+        <h6 style="
+        color: white;
+        margin-top: 0;
+    ">Email Change</h6>
+              <!--Old and New Email box-->
+              <input id="OldEmail" type="email" placeholder="Old Email" class="txtb">
+              <input id="NewEmail" type="email" placeholder="New Email" class="txtb">
+             
+            <!--Save Changes Button-->
+        <input id="savebuttonEmail" onclick="UpdateEmail()" type="button" value="Save Changes" class="Profile-btn">
+    
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css Designs/edit_profile.css">
+   <link rel="stylesheet" href="Css Designs/Profile_Page.css">
+    <script src="JavaScript/Login-Register.js"></script>
+</head>
+
+<body style="background-image: url(./Photos/763852.jpg);" onload="setLink(this)"> 
+     <button id="Button_Profile_Photo" onclick="changecss_Profile()" ondblclick="changecssDBL_Profile()" type="button">Profile Page</button>
+
+        <table id="tableofprofile" style="background-image: url(Photos/BG.png)" cellpadding="0" cellspacing="0">
+
+            <tr id="TowerHDPhoto">
+              <td >
+                <h1 id="kotrt" >Tower Of Honai</h1>
+            <img id="towerHD" src="./Photos/imageinprofilepage.png" alt="">
+            <a onclick="loadpage('Towers_Game.html')"><button id="Play_Button" >PlayGame</button></a>
+          </td>   
+          <td rowspan="2" id="Details_Window">
+            <h3>
+              <div style="display: inline-block;">
+              <a onclick="loadpage('Login_Register_Page.html')"><button id="X" >LogOut</button></a>
+              <a  onclick="loadpage('Edit_Profile.html')"><button id="X1" >Edit my Profile</button></a>
+            </div>
+               <br>
+
+        <img id="test"  onload="setLink(this)" style="width: 100px; height: 100px;">
+
+              <script>
+                
+            document.write(`<br> Full Name <br> ${localStorage.getItem(`RegFirNam`+localStorage.getItem('loginnednumber'))} ${localStorage.getItem('RegLasNam'+localStorage.getItem('loginnednumber'))} <br>`)
+           +
+             document.write(`<br> UserName <br>` + localStorage.getItem(`RegUsr`+localStorage.getItem('loginnednumber'))+ "<br>") 
+           +
+             document.write(`<br> Email<br> ` + localStorage.getItem(`RegEmail`+localStorage.getItem('loginnednumber'))+ "<br>") 
+           +
+             document.write(`<br> Phone Number<br> ` + localStorage.getItem(`RegPhoneNum`+localStorage.getItem('loginnednumber'))+ "<br>") 
+           +
+             document.write(`<br> Birthday<br> ` + localStorage.getItem(`bdayReg`+localStorage.getItem('loginnednumber'))+ "<br>") 
+           +
+             document.write(`<br> Address<br> ` + localStorage.getItem(`RegAdress`+localStorage.getItem('loginnednumber'))+ "<br>") 
+             +
+             document.write(`<br> Street <br>` + localStorage.getItem(`streetReg`+localStorage.getItem('loginnednumber'))+ "<br>")
+             +
+             document.write(`<br> Score <br>` + localStorage.getItem(`score`+localStorage.getItem('loginnednumber'))+ "<br>") 
+             + `<br>`
+           </script>
+           <button onclick="loadpage('ListUsersAdminPage.html')" id="X2" class="adminbutton">Edit All Profiles</button>
+
+        </h3>
+      </td>
+        </tr>
+<td>
+
+  <h2 style="background-color: navy; color: white;">TOP SCORES</h2>
+  <div style="color: white;">
+    <script>
+  top3();
+      document.write(localStorage.getItem('top1'))
+      +
+      document.write(`<br>`+localStorage.getItem('top2'))
+      +
+      document.write(`<br>`+localStorage.getItem('top3'))
+      </script>
+          </td>
+            
+          </tr>
+        </div>
+        </table>
+  
+      
+</body>
+</html>

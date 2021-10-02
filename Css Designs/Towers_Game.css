@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:monospace;
+}
+#exitbutton , #restartgamebutton{
+	background-color: rgba(255, 222, 173, 0);
+	color: white;
+	left: auto;
+	right: 0;
+	margin-left: 800px;
+}
+body{
+	text-align: center;
+background-repeat: no-repeat;
+background-size: 100% 160%;
+	background-image: url(https://images.unsplash.com/photo-1440864700007-c2a488a09c51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+}
+section{
+	margin:120px auto auto auto;
+}
+.tower{
+	border-bottom: 5px solid #fff;
+	width: 30%;
+	height: 300px;
+	display: inline-block;
+	border-radius: 7px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.tower:nth-of-type(2){
+	margin: auto 1% auto 1%;
+}
+.disc{
+	height: 25px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 1px #000;
+	position: absolute;
+}
+.upToMove{
+	position: absolute;
+	top: 0px;
+}
+.size1{
+	background: rgb(255, 187, 0);
+	width: 10%;
+	left: 45%;
+}
+.size2{
+	background: rgb(255, 160, 0);
+	width: 20%;
+	left: 40%;
+}
+.size3{
+	background: rgb(255, 130, 0);
+	width: 30%;
+	left: 35%;
+}
+.size4{
+	background: rgb(255, 115, 0);
+	width: 40%;
+	left: 30%;
+}
+.size5{
+	background: rgb(255, 251, 0);
+	width: 50%;
+	left: 25%;
+}
+.size6{
+	background: rgb(225, 0, 255);
+	width: 60%;
+	left: 20%;
+}
+.size7{
+	background-color: rgb(0, 0, 0);
+	width: 70%;
+	left: 15%;
+}
+.size8{
+	background-color: rgb(0, 255, 149);
+	width: 80%;
+	left: 10%;
+}
+.size9{
+	background-color: rgb(255, 0, 85);
+	width: 90%;
+	left: 5%;
+}
+.size10{
+	background-color: rgb(0, 104, 43);
+	width: 100%;
+	left: 0;
+}
+section p{
+	font-family: Tahoma;
+	width: 90%;
+	border: 2px solid orange;
+	margin: 20px auto;
+	margin-top: 60px;
+	border-radius: 7px;
+	padding: 10px;
+	position: absolute;
+	top: 20px;
+	left: 5%;
+	color:#fff;
+}
+.tower:after{
+	content: " ";
+	color: #fff;
+	width: 5px;
+	height: 300px;
+	background: #fff;
+	position: absolute;
+	z-index: -999999;
+	border-radius: 10px;
+}
+.won{
+	display: block;
+	width: 300px;
+	height: 100px;
+	margin-top: 78px;
+	margin-left: 607px;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	text-align:center;
+	font-family:sans-serif;
+}
+.won h1{
+	color:#1bcc87;
+	text-shadow:1px 1px 0 #000;
+}
+.won p{
+	font-size:20px;
+	line-height:30px;
+	color:red;
+}
+.timer{
+	color:#fff;
+	font-family:monospace;
+}
+.level{
+	background:#52c72e;
+	border:none;
+	padding:5px;
+	font-size:20px;
+	position:fixed;
+	top:0;
+	right:0;
+	outline:none;
+}
+.play{
+	background:#52c72e;
+	border:none;
+	padding:6px 20px;
+	font-size:20px;
+	position:fixed;
+	top:0;
+	left:0;
+	outline:none;
+}
+
+#startgame{
+	background-color: rgba(255, 255, 255, 0.329);
+	margin: auto;
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 10px;
+}
+.win1{
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css Designs/Login+Register-PAGE.css">
+    <script src="JavaScript/Login-Register.js"></script>
+    <!--Tittles Login AND Register-->
+  <div id="titles">
+    <button id="tittle_login" onclick="changecss_Login()" type="text">LOGIN</button>
+    <button id="tittle_register" onclick="changecss_Register()" type="text">Register</button>
+  </div>
+</head>
+<body>
+  <!--Login Form-->
+    <form id="Login_Form"> 
+        <div class="container">
+       
+          <label id="Username"><b>Username</b></label>
+          <br>
+          <input id="Usr" type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+          <label id="Password"><b>Password</b></label>
+          <br>
+          <input id="Psw" type="Password" placeholder="Enter Password" name="psw" required>
+              <br>
+          <button id="Button_L" type="button"  onclick="onclicklogin()">Sign In</button>
+          <label>
+          </label>
+        </div>
+        <br>  
+        </div>
+      </form>
+
+      <!--Register Form-->
+      <form id="Register_Form">    
+<input id="UploadButton" type="file" onchange="readURL(this)">
+        <label for="UploadButton"><img id="Profile_Photo" src="Photos/blank_Profile_IMG.jfif" width="100" height="100"></label>
+    <br>
+        <label id="boxes" style="
+        margin-top: 100px;
+    ">
+    <b>First Name</b> &emsp; &emsp; &emsp; &emsp; <b>Last Name</b></label>
+        <input id="RegFirNam" type="text" placeholder="Enter First Name" maxlength="60" name="uname" required/>
+        <input id="RegLasNam" type="text" placeholder="Enter Last Name" maxlength="60" name="uname" required/>
+        <br>
+        <label id="boxes"><b>User Name</b></label>
+        <input id="RegUsr" type="text" placeholder="Enter Username" maxlength="60" name="uname" required/>
+    <br>
+        <label id="boxes"><b>Password</b></label>
+        <input id="RegPsw" type="Password" maxlength="12" minlength="7" placeholder="Enter Password"  name="psw" required/>
+        <br>  
+        <label id="boxes"><b>Current Password</b></label>
+        <input id="CurRegPsw"  type="Password" maxlength="12" minlength="7" placeholder="Enter Current Password" name="psw" required/>
+        <br>
+        <label id="boxes"><b>Email</b></label>
+        <input id="RegEmail" type="email" placeholder="Enter Your Email" name="email" required/>
+<br>
+<label id="boxes"><b>Phone Number</b></label>
+        <input id="RegPhoneNum" type="text" placeholder="Enter Your Phone Number" name="RegPhoneNum" required/>
+  <label>
+<br>
+    <div id="boxes">Enter your birthday:</div>
+    <input id="Birthday_Bar" type="text" placeholder="DD/MM/YYYY" name="bday" required>
+  </label>
+
+<br>
+        <label id="boxes"><b>Address</b></label>
+        <input id="RegAdress" type="text" placeholder="Enter Your Address" name="uname" required/>
+        <br>
+        <label id="boxes"><b>street</b></label>
+        <input id="streetReg" type="text" placeholder="Enter Street Pin" name="uname" required/>
+        <button id="Button_R" type="button" onclick="forregister()">Register</button>   
+    </form>
+
+</body>
+</html>

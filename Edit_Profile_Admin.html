@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Css Designs/editprofileadmin.css">
+    <script src="JavaScript/Login-Register.js"></script>
+  </head>
+  <body onload="onloadbodyadminedit()">
+    <!--div for the form--> 
+    <div class="Profile-Edit" style="background-image: url(Photos/BG.png);">
+      <!--Exit Button-->
+      <a onclick="loadpage('ListUsersAdminPage.html')" ><button id="X"style="
+    margin-bottom: 0px;
+    " >X</button></a>
+    <!--Form-->
+      <form class="form" action="index.html">
+        <!--Profile Tittle-->
+        <h1>Profile Edit of Username :<script>
+        document.write(localStorage.getItem('RegUsr'+localStorage.getItem('AdminEditId')));
+        </script>
+        </h1>
+        <img id="PhotoToChange" onload="setLinkForAdmin(this)" style="width: 100px; height: 100px;">
+        <p>_____________________________</p><!--Line Between the old and new upload photo-->
+        <input id="UploadButton" type="file" onchange="readURL(this)"><!--Upload Button-->
+        <!--Show The Image-->
+        <label for="UploadButton"><img id="Profile_Photo" src="Photos/blank_Profile_IMG.jfif" width="100" height="100"></label>
+
+        <!--Boxes of Details-->
+        <input id="UpdateFirstName" type="text" placeholder="First Name" class="txtb">
+        <input id="UpdateLastName" type="text" placeholder="Last Name" class="txtb">
+        <input id="UpdateUserName" type="text" placeholder="UserName" class="txtb">
+        <input id="UpdateBirthDay" type="text" placeholder="Birthday" class="txtb">
+        <input id="UpdatePhoneNumber" type="text" placeholder="PhoneNumber" class="txtb">
+        <input id="UpdateAddress" type="text" placeholder="Adderss" class="txtb">
+        <input id="UpdateStreet" type="text" placeholder="Street" class="txtb">
+        <input id="UpdateEmailAdmin" type="text" placeholder="Email" class="txtb">
+        <input id="UpdatePasswordAdmin" type="text" placeholder="Password" class="txtb">
+       
+        <!--Button of save Changes-->
+        <input id="savebutton" onclick="onclicksaveadmin()" type="button" value="Save Changes" class="Profile-btn">
+
+    </div>
+  </div>
+  </body>
+</html>

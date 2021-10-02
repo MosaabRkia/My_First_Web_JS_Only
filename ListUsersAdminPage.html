@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JavaScript/Login-Register.js"></script>
+    <link rel="stylesheet" href="Css Designs/ListUsersAdminPage.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url(Photos/wallpaperforadminpage.jpg);">
+  <button id="GoToProfileFromAdmin" onclick="loadpage('Profile_Page.html')">Go To My Profile</button>
+    <table id="listofusers">
+      <tr id="maintr" >
+        <th >Profile Photo
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Number Phone</th>
+            <th>Address</th>
+            <th>Street</th>
+            <th>UserName</th>
+            <th>Birthday</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th colspan="2">
+          <a id="logoutbutton" style="font-size: 23px; padding-left: 26px;" onclick="loadpage('Login_Register_Page.html')" class="active">LogOut</a>
+            </th>
+        </th>
+      </tr>
+<script>
+    loadthepageadmin();
+</script>     
+</table>
+</body>
+</html>

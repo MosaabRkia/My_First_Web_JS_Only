@@ -1,0 +1,144 @@
+
+  body{
+    background-size: cover; 
+    }
+    body {
+      animation: fadeIn 2.4s linear;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+/* Tower  photo */
+        #towerHD{
+            width: 326px;
+    height: 320px;
+        }
+
+
+
+/*Place of the tower  photo*/
+     #TowerHDPhoto{
+        width:20%;
+        height: 40px;
+        }
+
+
+
+/*Table Design*/
+table {
+    visibility: hidden;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto; 
+
+  }
+  
+
+  /*shorot + amodot*/
+  td ,tr {
+    border: 5px solid #dddddd;
+    text-align: center;
+    padding: 0px;
+    height: 100px;
+  }
+ 
+
+
+  /* tittle*/
+  h1{
+    text-align: center;
+    margin-top: 43px;
+    margin-bottom: 2%;
+    color: rgb(212, 138, 0);
+    background-color: rgba(122, 0, 16, 0.219);
+    width: 30%;
+    height: 30%;
+    margin-left: 36%;
+  }
+
+
+  /*Details from localstorage (text in table)*/
+  h3{
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 20px;
+    color: white;
+  }
+
+    /*buttons in the table*/
+  #X , #X1{
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(137, 43, 226, 0);
+    font-size: 10px;   
+    width: 63px;
+  }
+  #Play_Button{
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-family: cursive;
+    background-color: rgba(137, 43, 226, 0);
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 116px;
+    font-size: 20px;
+    height: 36px;
+  }
+  /*buttons in the table*/
+  #X{ margin-left: 500px;}
+  #X1{ margin-right: 500px; }
+
+
+    /*Button login and Button Register*/
+    #Button_Profile_Photo {
+        cursor: pointer;
+        outline: none;
+        color: white;
+        font-family: cursive;
+            height: 150px;
+            width: 400px;
+            position: relative;
+            margin-top: 230px;
+            font-size: 75px;
+            background-color: rgba(0, 206, 209, 0);
+            top: 40%;
+            left: 37%;
+            border: rgba(178, 34, 34, 0);
+            -ms-transform: translate(-50%, -50%);
+ 
+      }
+      
+      /*Button login and Button Register "HOVER" */
+      #Button_Profile_Photo:hover{
+          color: rgb(92, 92, 92);
+      -webkit-animation:rainbow 5s infinite;
+      -ms-animation:rainbow 5s infinite;
+      -o-animation:rainbow 5s infinite;
+      animation:rainbow 5s infinite;
+      }
+
+
+   #kotrt{
+     color: white;
+     width: auto;
+     background-color: navy;
+     height: auto;
+     margin-top: 0px;
+     margin-left: 0px;
+     margin-bottom: 40px;
+   }

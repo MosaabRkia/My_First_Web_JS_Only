@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Css Designs/edit_profile.css">
+    <script src="JavaScript/Login-Register.js"></script>
+  </head>
+  <body onload="loadtheplaceholder()">
+    <!--Form create div-->
+    <div class="Profile-Edit" style="background-image: url(Photos/BG.png);">
+      <!--X Button(exit)-->
+      <a onclick="loadpage('Profile_Page.html')" ><button id="X" >X</button></a>
+        <!--Form Create-->
+      <form class="form" action="index.html">
+        <!--Profile Tittle-->
+        <h1>Profile Edit</h1>
+
+        <h6 style="
+        color: white;
+        margin-top: 1px;
+    ">Edit Details</h6>
+              <!--first and last name box-->
+        <input id="UpdateFirstName" type="text" placeholder="First Name" class="txtb">
+        <input id="UpdateLastName" type="text" placeholder="Last Name" class="txtb">
+        <input id="UpdateUserName" type="text" placeholder="UserName" class="txtb">
+        <input id="UpdateBirthDay" type="text" placeholder="Birthday" class="txtb">
+        <input id="UpdatePhoneNumber" type="text" placeholder="PhoneNumber" class="txtb">
+        <input id="UpdateAddress" type="text" placeholder="Adderss" class="txtb">
+        <input id="UpdateStreet" type="text" placeholder="Street" class="txtb">
+       <!--Buttons-->
+        <!--Button of save Changes-->
+        <input id="savebutton" onclick="UpdateDetails()" type="button" value="Save Changes" class="Profile-btn">
+
+      <!--Button of Edit Password-->
+          <input id="edit-pw-em" type="button" onclick="ToEditPasswordPage()" value="Edit Password" class="Profile-btn">
+
+  <!--Button of Edit Profile Picture-->
+  <input id="edit-pw-em" type="button" onclick="ToEditProfilePicturePage()" value="Edit Profile Picture" class="Profile-btn">
+
+
+       <!--Button of Edit Email-->
+        <input id="edit-pw-em" type="button" onclick="ToEditEmailPage()" value="Edit Email" class="Profile-btn">
+
+
+    </div>
+  </div>
+  </body>
+</html>

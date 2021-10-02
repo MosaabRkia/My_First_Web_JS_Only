@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Css Designs/edit_email_Password.css">
+    <script src="JavaScript/Login-Register.js"></script>
+  </head>
+  <body onload="setLink(this)">
+    
+    <div class="Profile-Edit" style="background-image: url(Photos/BG.png);">
+      <a href="Edit_Profile.html" ><button id="X" >X</button></a><!--X Button-->
+      <form class="form" action="index.html">
+        <!--Profile Tittle-->
+        <h1>Profile Edit</h1>
+        <h6 style="
+        color: white;
+        margin-top: 0;
+    ">Profile Photo Change</h6>
+              <!--first and last name box-->
+              <img id="test" onload="setLink(this)" style="width: 100px; height: 100px;">
+              <p>_____________________________</p>
+              <input id="UploadButton" type="file" onchange="readURL(this)">
+        <label for="UploadButton"><img id="Profile_Photo" src="Photos/blank_Profile_IMG.jfif" width="100" height="100"></label>
+         
+        <!--Save Changes-->  
+        <input id="savebutton" onclick="onchangephoto()" type="button" value="Save Changes" class="Profile-btn">
+    
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
